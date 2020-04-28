@@ -35,6 +35,7 @@
                                     </div>
                                     <div class="time_left">{{item.description_map.validity_delta}}</div>
                                 </section>
+                                <!-- 有的会用到 -->
                                 <footer class="list_item_footer" v-if="item.limit_map">
                                     <p>{{item.limit_map.restaurant_flavor_ids}}</p>
                                 </footer>
@@ -57,6 +58,7 @@
                     </footer>
                 </section>
             </transition>
+            <!-- 代金券 -->
             <transition name="router-fade">
                 <section v-if="categoryType === 2" class="voucher_container">
                     <section class="hongbao_description voucher_header">

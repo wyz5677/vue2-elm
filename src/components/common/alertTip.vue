@@ -33,6 +33,7 @@
 
 <style lang="scss" scoped>
     @import '../../style/mixin';
+    // 弹出动画
 	@keyframes tipMove{
        0%   { transform: scale(1) }
        35%  { transform: scale(.8) }
@@ -72,6 +73,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            // 指定第一个子元素类型为 span标签的元素
             span:nth-of-type(1){
                 @include wh(.12rem, 1.5rem);
                 background-color: #f8cb86;

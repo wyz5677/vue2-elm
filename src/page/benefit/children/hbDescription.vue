@@ -47,11 +47,15 @@
 </template>
 
 <script>
+    // 公用头部
     import headTop from 'src/components/header/head'
+    // 没使用
     import {mapState, mapMutations} from 'vuex'
+    // 没使用
     import {payRequest} from 'src/service/getData'
     import alertTip from 'src/components/common/alertTip'
     import loading from 'src/components/common/loading'
+    // 浏览器滚动插件
     import BScroll from 'better-scroll'
 
     export default {

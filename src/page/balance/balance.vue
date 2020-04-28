@@ -22,6 +22,7 @@
             <img src="../../images/no-log.png">
             <p>暂无明细记录</p>
         </div>
+        <!-- 弹出组件 没有操作可以触发 可以改v-if -->
         <alert-tip v-if="showAlert" @closeTip="showAlert = false" :alertText="alertText"></alert-tip>
         <transition name="router-slid" mode="out-in">
             <router-view></router-view>
@@ -36,8 +37,8 @@
     export default {
       data(){
             return{
-                showAlert: false,
-                alertText: null,
+                showAlert: true,
+                alertText: '123',
             }
         },
         mounted(){

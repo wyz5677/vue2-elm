@@ -5,6 +5,7 @@
             <input type="text" placeholder="请输入兑换码" v-model="exchangeCode" class="exchange_input">
             <section class="input_container captcha_code_container">
                 <input type="text" placeholder="验证码" maxlength="4" v-model="codeNumber">
+                <!-- 验证码的原理 -->
                 <div class="img_change_img">
                     <img v-show="captchaCodeImg" :src="captchaCodeImg">
                     <div class="change_img" @click="getCaptchaCode">

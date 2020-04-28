@@ -14,10 +14,15 @@
 </template>
 
 <script>
+    // 公共头部组件
     import headTop from 'src/components/header/head'
+    // vuex的方法
     import {mapState, mapMutations} from 'vuex'
+    // 没用上
     import {payRequest} from 'src/service/getData'
+    // 没用上
     import alertTip from 'src/components/common/alertTip'
+    // 没用上
     import loading from 'src/components/common/loading'
 
     export default {
@@ -45,10 +50,12 @@
         z-index: 203;
         background-color: #fff;
         p, span{
+            // font-family可以把多个字体名称作为一个“回退”系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。
             font-family: Helvetica Neue,Tahoma,Arial;
         }
     }
     .markdown{
+        // 导入mixin后就可以把变量传过去
         @include sc(.6rem, #666);
         padding: 0 0.5rem 0.5rem;
         h3{
