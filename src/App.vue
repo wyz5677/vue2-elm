@@ -1,3 +1,4 @@
+<!-- 已过 -->
 <template>
 	<div>
 		<transition name="router-fade" mode="out-in">

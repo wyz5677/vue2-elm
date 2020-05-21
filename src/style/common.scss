@@ -1,3 +1,4 @@
+// 已过
 body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption, {
     padding: 0;
     margin: 0;
@@ -9,7 +10,10 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     font-weight: normal;
     font-family: "Microsoft Yahei";
     box-sizing: border-box;
+    // 当用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色。
+    // 移动端开发的过程中，当用户连接某个文字 跳转时候 出现 高亮一块，这样很影响用户体验，我们可以吧颜色设置为透明
     -webkit-tap-highlight-color:transparent;
+    // 对字体进行抗锯齿渲染可以使字体看起来会更清晰舒服。
     -webkit-font-smoothing: antialiased;
     &:hover{
         outline: none;
@@ -39,11 +43,11 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
     background-color: #555;  
 }  
-
+// 解决安卓和苹果样式不一的问题
 input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
     -webkit-appearance: none;
 }
-
+// 解决安卓和苹果样式不一的问题
 textarea { -webkit-appearance: none;}   
 
 html,body{
@@ -52,13 +56,13 @@ html,body{
     background-color: #F5F5F5;
 }
 
-
+// 清除浮动
 .clear:after{
     content: '';
     display: block;
     clear: both;
 }
-
+// 清除浮动
 .clear{
     zoom:1;
 }
@@ -90,14 +94,16 @@ html,body{
 
 .ellipsis{
     overflow: hidden;
+    // 显示省略符号来代表被修剪的文本。
     text-overflow: ellipsis;
+    // 文本不换行
     white-space: nowrap;
 }
 
 .paddingTop{
     padding-top: 1.95rem;
 }
-
+// 定义透明度动画
 @keyframes backOpacity{
    0%   { opacity: 1 }
    25%  { opacity: .5 }
@@ -105,7 +111,7 @@ html,body{
    75%  { opacity: .5 }
    100% { opacity: 1 }
 }
-
+// 一个透明度动画
 .animation_opactiy{
     animation: backOpacity 2s ease-in-out infinite;
 }
